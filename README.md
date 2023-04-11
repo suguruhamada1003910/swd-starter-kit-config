@@ -10,6 +10,9 @@ The [`commissioning`](./commissioning) directory contains scripts for commission
 
 For more information about commissioning, refer to [`docs/Commissioning.md`](docs/Commissioning.md).
 
+2023/04/11:
+Added update_min_speed() to change minimum speed. The unit is rpm.
+
 ---
 
 ez-Wheel® 2021
