@@ -159,6 +159,11 @@ def main(argv):
     #
     commissioning.update_error_behavior()
 
+    #
+    # Update min speed
+    #
+    commissioning.update_min_speed()
+
     # Save modified parameters
     error = commissioning.communication_client.storeParameters(BlocId.ALL)
     commissioning.check("storeParameters", 1)  # error)

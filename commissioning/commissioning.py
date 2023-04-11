@@ -219,6 +219,9 @@ def update_error_behavior():
     error = can_open_client.setValueUInt8(0x1029_02_00, 1)  # error_behavior_syserr_for_error => 1 (no change of the NMT state)
     check("update_error_behavior()", error)
 
+def update_min_speed():
+    error = can_open_client.setValueUInt32(0x6046_01_20, 5)
+    check("update_min_speed", error)
 
 # Init
 def create_dbus_clients(instance_id: str):
